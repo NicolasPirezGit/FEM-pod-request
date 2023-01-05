@@ -4,52 +4,58 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="application-name" content="Pod">
+    <meta name="author" content="Frontend Mentor, Nicolás Pírez">
+    <meta name="description" content="A webpage where users can request access to a podcast publishing service">
+    <meta name="keywords" content="Pod, podcast, podcast publishing">
 
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     
     <title>Frontend Mentor | Pod request access landing page</title>
   </head>
+
   <body>
-    
-
-    <div class="site-access-container">
-      <div id="podLogoBox">
+    <main class="site-access-container">
+      <header id="podLogoBox">
         <img src="assets/desktop/logo.svg" id="podLogo" alt="Pod logo">
-      </div>
+      </header>
 
-      <div id="accessImgBox">
+      <figure id="accessImgBox">
         <img src="assets/desktop/image-host.jpg" id="accessImg" alt="Access page image">
-      </div>
+      </figure>
 
-      <div class="outer-content-box">
-        <div class="inner-content-box">
-          <h1 id="contentTitle">PUBLISH YOUR PODCASTS EVERYWHERE</h1>
-    
-          <p id="siteDescription">
-            Upload your audio to Pod with a single click. We'll then distribute your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and more!
-          </p>
+      <section class="outer-content-box">
+        <main class="inner-content-box">
+          <header id="contentTitleBox">
+            <h1 id="contentTitle">PUBLISH YOUR PODCASTS EVERYWHERE</h1>
+          </header>
+          
+          <article id="accessInfoBox">
+            <p id="accessInfo">
+              Upload your audio to Pod with a single click. We'll then distribute your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and more!
+            </p>
+          </article>
     
           <form id="emailForm">
             <input type="email" class="user-email" placeholder="Email Address">
             <button type="button" class="submit-btn" id="accessBtn">Request Access</button>
           </form>
     
-          <div class="logos-container">
+          <figure class="brands-container">
             <img src="assets/desktop/spotify.svg" id="spotiLogo" alt="Spotify logo">
             <img src="assets/desktop/apple-podcast.svg" id="apLogo" alt="Apple Podcast logo">
             <img src="assets/desktop/google-podcasts.svg" id="gpLogo" alt="Google Podcast logo">
             <img src="assets/desktop/pocket-casts.svg" id="pcLogo" alt="Pocket Casts logo">
-          </div>
-        </div>
-      </div>
+          </figure>
+        </main>
+      </section>
       
-      <div class="dots-patt-container">
+      <aside class="dots-pattern-box">
         <img src="assets/desktop/bg-pattern-dots.svg" id="dotsPattern" alt="dots pattern">
-      </div>
-    </div>
+      </aside>
+    </main>
     
-
 
     <script src="js/script.js" type="text/javascript"></script>
   </body>
