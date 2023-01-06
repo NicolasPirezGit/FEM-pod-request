@@ -1,0 +1,77 @@
+/*Apply when needed => font-family: 'Chivo', sans-serif;*/
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Chivo', sans-serif;
+    background-color: hsla(224, 35%, 11%, 1);
+}
+
+figure {
+    margin: 0;
+}
+
+.green-text {
+    color: hsla(157, 74%, 61%, 1);
+}
+
+#contentTitle {
+    width: 665px;
+    height: 124px;
+    font-size: 52px;
+    font-weight: 100;
+    line-height: 62px;
+    color: hsla(0, 0%, 100%, 1);
+}
+
+#accessInfo {
+    width: 445px;
+    height: 84px;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 28px;
+    color: hsla(224, 40%, 83%, 1);
+}
+
+#emailForm {
+    position: relative;
+}
+
+.user-email, .user-email::placeholder {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 28px;
+    color: hsla(0, 0%, 100%, 1);
+}
+
+.user-email {
+    width: 393px;
+    height: 52px;
+    padding-left: 32px;
+    outline: none;
+    border: none;
+    border-radius: 28px;
+    background-color: hsla(224, 26%, 23%, 1);
+}
+
+#accessBtn {
+    position: absolute;
+    top: 4px;
+    left: 260px;
+    width: 162px;
+    height: 46px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 28px;
+    border: none;
+    border-radius: 28px;
+    cursor: pointer;
+    color: hsla(224, 35%, 11%, 1);
+    background-color: hsla(157, 74%, 61%, 1);
+}
