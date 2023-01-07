@@ -1,4 +1,4 @@
-/*Apply when needed => font-family: 'Chivo', sans-serif;*/
+/*START OF BASE STYLING*/
 html {
     height: 100%;
 }
@@ -16,23 +16,93 @@ body {
 figure {
     margin: 0;
 }
+/*END OF BASE STYLING*/
+
+
+/*START OF MAIN ELEMENTS' POSITIONING*/
+#podLogo {
+    width: 135px;
+    height: 56px;
+}
+
+#accessImgBox {
+    width: 888px;
+    height: 640px;
+    position: relative;
+    z-index: 0;
+}
+
+.outer-content-box {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 723px;
+    height: 509px;
+    z-index: 2;
+    background-color: rebeccapurple;
+}
+
+.dots-pattern-box {
+    position: relative;
+    z-index: 1;
+}
+
+#dotsPattern {
+    width: 232px;
+    height: 104px;
+}
+/*END OF MAIN ELEMENTS' POSITIONING*/
+
+
+/*START OF INNER BOX STYLING*/
+.inner-content-box {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 665px;
+    height: 421px;
+    background-color: green;
+}
 
 .green-text {
     color: hsla(157, 74%, 61%, 1);
 }
 
-#contentTitle {
+#contentTitleBox, #accessInfoBox {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+#contentTitle, #accessInfo {
+    width: 100%;
+    height: 100%;
+}
+
+#contentTitleBox {
     width: 665px;
     height: 124px;
+    margin-bottom: 1.2rem;
+}
+
+#contentTitle {
     font-size: 52px;
     font-weight: 100;
     line-height: 62px;
     color: hsla(0, 0%, 100%, 1);
 }
 
-#accessInfo {
+#accessInfoBox {
     width: 445px;
     height: 84px;
+    margin-bottom: 2.5rem;
+}
+
+#accessInfo {
+    margin-top: 20px;
     font-size: 18px;
     font-weight: 100;
     line-height: 28px;
@@ -41,6 +111,7 @@ figure {
 
 #emailForm {
     position: relative;
+    margin-bottom: 4.04rem;
 }
 
 .user-email, .user-email::placeholder {
@@ -52,7 +123,7 @@ figure {
 
 .user-email {
     width: 393px;
-    height: 52px;
+    height: 54px;
     padding-left: 32px;
     outline: none;
     border: none;
@@ -62,7 +133,7 @@ figure {
 
 #accessBtn {
     position: absolute;
-    top: 4px;
+    top: 5px;
     left: 260px;
     width: 162px;
     height: 46px;
@@ -75,3 +146,4 @@ figure {
     color: hsla(224, 35%, 11%, 1);
     background-color: hsla(157, 74%, 61%, 1);
 }
+/*END OF INNER BOX STYLING*/
