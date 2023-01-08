@@ -5,6 +5,9 @@ html {
 
 body {
     display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
     min-height: 100vh;
     margin: 0;
     padding: 0;
@@ -20,15 +23,27 @@ figure {
 
 
 /*START OF MAIN ELEMENTS' POSITIONING*/
+.site-access-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 1275px;
+    height: 640px;
+}
+
 #podLogo {
     width: 135px;
     height: 56px;
+    position: absolute;
+    left: 165px;
+    top: 102px;
 }
 
 #accessImgBox {
     width: 888px;
     height: 640px;
     position: relative;
+    left: -336px;
     z-index: 0;
 }
 
@@ -38,10 +53,11 @@ figure {
     flex-flow: column nowrap;
     justify-content: flex-end;
     align-items: flex-start;
+    flex: 0 0 auto;
     width: 723px;
     height: 509px;
     z-index: 2;
-    background-color: rebeccapurple;
+    background-color: hsla(224, 35%, 11%, 1);
 }
 
 .dots-pattern-box {
@@ -50,6 +66,9 @@ figure {
 }
 
 #dotsPattern {
+    position: absolute;
+    right: 336px;
+    bottom: -52px;
     width: 232px;
     height: 104px;
 }
@@ -64,7 +83,6 @@ figure {
     align-items: flex-start;
     width: 665px;
     height: 421px;
-    background-color: green;
 }
 
 .green-text {
