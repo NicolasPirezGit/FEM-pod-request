@@ -103,7 +103,7 @@ figure {
 #contentTitleBox {
     width: 665px;
     height: 124px;
-    margin-bottom: 1.2rem;
+    margin-bottom: 19.2px;
 }
 
 #contentTitle {
@@ -116,7 +116,7 @@ figure {
 #accessInfoBox {
     width: 445px;
     height: 84px;
-    margin-bottom: 2.5rem;
+    margin-bottom: 40px;
 }
 
 #accessInfo {
@@ -129,7 +129,8 @@ figure {
 
 #emailForm {
     position: relative;
-    margin-bottom: 4.04rem;
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 .user-email, .user-email::placeholder {
@@ -155,13 +156,31 @@ figure {
     left: 260px;
     width: 162px;
     height: 46px;
-    font-size: 14px;
+    font-size: 0.875rem; /*14px*/
     font-weight: 600;
-    line-height: 28px;
+    line-height: 1.75rem; /*28px*/
     border: none;
-    border-radius: 28px;
+    border-radius: 1.75rem; /*28px*/
     cursor: pointer;
     color: hsla(224, 35%, 11%, 1);
     background-color: hsla(157, 74%, 61%, 1);
+}
+
+#accessBtn:hover {
+    background-color: hsla(157, 100%, 85%, 1);
+}
+
+.valid-label {
+    display: none;
+    margin: 8px 0px 0px 32px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14.28px;
+    color: hsla(0, 96%, 61%, 1);
+}
+
+.brands-container {
+    height: 29px;
+    margin-top: 68.6px;
 }
 /*END OF INNER BOX STYLING*/

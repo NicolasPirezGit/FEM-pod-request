@@ -36,9 +36,17 @@
             </p>
           </article>
     
-          <form id="emailForm">
-            <input type="email" class="user-email" placeholder="Email address">
-            <button type="button" id="accessBtn">Request Access</button>
+          <form action="/index.html" method="get" id="emailForm">
+            <input type="email" name="userEmail" class="user-email" value="" placeholder="Email address">
+            <button type="submit" id="accessBtn" formnovalidate>Request Access</button>
+
+            <label for="userEmail" class="valid-label" id="emptyEmailMsg">
+              Oops! Please add your email
+            </label>
+
+            <label for="userEmail" class="valid-label" id="badFormatMsg">
+              Oops! Please check your email
+            </label>
           </form>
     
           <figure class="brands-container">
