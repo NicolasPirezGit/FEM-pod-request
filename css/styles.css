@@ -16,12 +16,13 @@ body {
     background-color: hsla(224, 35%, 11%, 1);
 }
 
-figure {
+figure, picture {
     margin: 0;
 }
 /*END OF BASE STYLING*/
 
 
+/*START OF DESKTOP DESIGN*/
 /*START OF MAIN ELEMENTS' POSITIONING*/
 .site-access-container {
     display: flex;
@@ -31,7 +32,7 @@ figure {
     height: 640px;
 }
 
-#podLogo {
+#podLogoBox {
     width: 135px;
     height: 56px;
     position: absolute;
@@ -107,9 +108,9 @@ figure {
 }
 
 #contentTitle {
-    font-size: 52px;
+    font-size: 3.25rem;
     font-weight: 100;
-    line-height: 62px;
+    line-height: 3.875rem;
     color: hsla(0, 0%, 100%, 1);
 }
 
@@ -121,9 +122,9 @@ figure {
 
 #accessInfo {
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 100;
-    line-height: 28px;
+    line-height: 1.75rem;
     color: hsla(224, 40%, 83%, 1);
 }
 
@@ -134,9 +135,9 @@ figure {
 }
 
 .user-email, .user-email::placeholder {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 600;
-    line-height: 28px;
+    line-height: 1.75rem;
     color: hsla(0, 0%, 100%, 1);
 }
 
@@ -173,9 +174,9 @@ figure {
 .valid-label {
     display: none;
     margin: 8px 0px 0px 32px;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 600;
-    line-height: 14.28px;
+    line-height: 0.893rem;
     color: hsla(0, 96%, 61%, 1);
 }
 
@@ -183,4 +184,197 @@ figure {
     height: 29px;
     margin-top: 68.6px;
 }
+
+.brands {
+    margin-left: 40px;
+}
+
+#spotiLogo {
+    margin-left: 0;
+}
 /*END OF INNER BOX STYLING*/
+/*END OF DESKTOP DESIGN*/
+
+
+/*START OF TABLET DESIGN*/
+@media screen and (max-width: 768px) {
+
+    .site-access-container {
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 768px;
+        height: 1024px;
+    }
+
+    #podLogoBox {
+        left: 39px;
+        top: 50px;
+    }
+
+    #accessImgBox {
+        width: 491px;
+        height: 767px;
+        left: -397px;
+    }
+
+    .outer-content-box {
+        align-self: center;
+        width: 635px;
+        height: 509px;
+        margin-left: 39px;
+    }
+    
+    .inner-content-box {
+        width: 635px;
+        height: 416px;
+    }
+
+    #contentTitle {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+
+    .brands-container {
+        margin-top: 64px;
+    }
+
+    #dotsPattern {
+        right: 902px;
+        bottom: -1024px;
+    }
+}
+/*END OF TABLET DESIGN*/
+
+
+/*START OF MOBILE DESIGN*/
+@media screen and (max-width: 375px) {
+    body {
+        background: hsla(224, 35%, 11%, 1) url(image-host-s.jpg) top left/cover no-repeat content-box scroll;
+        
+    }
+
+    .site-access-container {
+        position: relative;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 375px;
+        height: 667px;
+        background-color: hsla(224, 35%, 11%, 0.92);
+    }
+
+    #podLogoBox {
+        position: static;
+        z-index: 5;
+        margin-top: 15px;
+    }
+
+    .outer-content-box {
+        width: 327px;
+        height: 400px;
+        margin: 0;
+        background-color: transparent;
+    }
+    
+    .inner-content-box {
+        width: 100%;
+        height: 100%;
+    }
+
+    #accessImgBox {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 375px;
+        height: 667px;
+    }
+
+    #contentTitleBox, #accessInfoBox {
+        text-align: center;
+    }
+
+    #contentTitleBox {
+        width: 327px;
+        height: 76px;
+        margin: 0;
+    }
+
+    #contentTitle {
+        font-size: 1.625rem;
+        line-height: 2.375rem;
+        margin: 0;
+    }
+
+    #accessInfoBox {
+        width: 327px;
+        height: 100px;
+        margin: 16px 0 0 0;
+    }
+
+    #accessInfo {
+        font-size: 0.938rem;
+        line-height: 1.563rem;
+        margin: 0;
+    }
+
+    .brands-container {
+        align-self: center;
+        order: 3;
+        width: max-content;
+        height: 17px;
+        margin: 33px 0 0 0;
+    }
+
+    .brands {
+        margin-left: 18px;
+    }
+
+    /*START OF BRANDS' SIZE*/
+    #spotiLogo {
+        width: 56px;
+        height: 17px;
+        margin-left: 0;
+    }
+
+    #apLogo {
+        width: 45px;
+        height: 17px;
+    }
+
+    #gpLogo {
+        width: 73px;
+        height: 11px;
+    }
+
+    #pcLogo {
+        width: 77px;
+        height: 15px;
+    }
+    /*END OF BRANDS' SIZE*/
+
+
+    #emailForm {
+        order: 4;
+        margin-top: 48px;
+    }
+    
+    .user-email {
+        width: 293px;
+        height: 46px;
+    }
+    
+    .valid-label {
+        order: 2;
+    }
+
+    #accessBtn {
+        position: initial;
+        order: 3;
+        width: 327px;
+        height: 46px;
+        margin-top: 16px;
+    }
+
+}
+/*END OF MOBILE DESIGN*/
